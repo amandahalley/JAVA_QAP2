@@ -40,11 +40,25 @@ public class MyPoint {
         this.y = y;
     }
 
-    //print point X and Y int this format - (x, y)
-    public String toString() {
-        return "(" + x + "," + y + ")";
+    //Method to caluclate the distance another point object
+    public double distance(MyPoint another) {
+        int xDiff = this.x - another.x;
+        int yDiff = this.y - another.y;
+        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
     }
 
-    
+    //Calculate distance to a point with (x, y)
+    public double distance(int x, int y) {
+        int xDiff = this.x - x;
+        int yDiff = this.y - y;
+        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+    }
+
+     //print point X and Y int this format - (x, y)
+     public String toString() {
+        return "(" + x + "," + y + ")";
+    }
 }
+
+
 
