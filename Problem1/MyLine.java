@@ -75,6 +75,29 @@ public class MyLine {
         end.setY(y);
     }
 
+    // Get both begin coordinates as an array and set both
+    public int[] getBeginXY() {
+        return begin.getXY();
+    }
+
+    public void setBeginXY(int x, int y) {
+        begin.setXY(x, y);
+    }
+
+    // Get both end coordinates as an array and set both
+    public int[] getEndXY() {
+        return end.getXY();
+    }
+
+    public void getEndXY(int x, int y) {
+        end.setXY(x, y);
+    }
+
+    // Calculateing length of line using distance method from MyPoint class
+    public double getLength() {
+        return begin.distance(end);
+    }
+
 
 
     
