@@ -17,4 +17,65 @@ public class MyLine {
         this.begin = begin;
         this.end = end;
     }
+
+
+    //Getters and Setters
+
+    //Begin point
+    public MyPoint getBegin() {
+        return begin;
+    }
+
+    public void setBegin (MyPoint begin) {
+        this.begin = begin;
+    }
+
+    //End point
+    public MyPoint getEnd() {
+        return end;
+    }
+
+    public void setEnd(MyPoint end) {
+        this.end = end;
+    }
+
+    // X - coordinate begin point
+    public int getBeginX() {
+        return begin.getX();
+    }
+
+    public void setBeginX(int x) {
+        begin.setX(x);
+    }
+
+    // Y - coordinate begin point
+    public int getBeginY() {
+        return begin.getY();
+    }
+
+    public void setBeginY(int y) {
+        begin.setY(y);
+    }
+
+    //X - coordinate end point
+    public int getEndX() {
+        return end.getX();
+    }
+
+    public void getEndX(int x) {
+        end.setX(x);
+    }
+
+    // Y - coordinate end point
+    public int getEndY() {
+        return end.getY();
+    }
+
+    public void setEndY(int y) {
+        end.setY(y);
+    }
+
+
+
+    
 }
