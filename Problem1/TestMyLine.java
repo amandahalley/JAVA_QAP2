@@ -13,5 +13,17 @@ public class TestMyLine {
         //using distance (x, y)
         double distance2 = p1.distance(3, 4);
         System.out.println("\nDistance between point 1 and (3,4) is: " + distance2);
+
+        // Testing length of line
+
+        MyPoint begin = new MyPoint(0, 0);
+        MyPoint end = new MyPoint(6, 8);
+
+        MyLine line = new MyLine(begin, end); 
+
+        double length = line.getLength();
+        System.out.println("\nLength of line is: " + length);
     }
+
+    
 }
