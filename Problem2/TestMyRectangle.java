@@ -11,7 +11,22 @@ public class TestMyRectangle {
 
         //Test basic methods of MyRectangle class
 
-        System.out.println("My Rectangle: " + rectangle);
+        System.out.println("\nMy Rectangle: " + rectangle);
+
+
+        //Test getLength
+        System.out.println("\nLength = " + rectangle.getLength());
+
+        //Test getWidth
+        System.out.println("Width = " + rectangle.getWidth());
+
+        //Test getArea
+        System.out.println("Area = " + rectangle.getArea());
+
+        //Test getPerimeter
+
+        System.out.println("Perimeter = " + rectangle.getPerimeter());
+
 
     }
 }
