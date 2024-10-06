@@ -37,16 +37,17 @@ public class MyRectangle {
 
     // calculate length of horizontal distance from top-left to bottom-right 
     public float getLength() {
-
+        return Math.abs(bottomRight.getX() - topLeft.getX());
     }
 
     // calculate vertical distance from top-left to bottom-right 
     public float getWidth() {
-
+        return Math.abs(topLeft.getY() - bottomRight.getX());
     }
 
     // Calculate the area of the rectangle (length x width)
     public float getArea() {
+        
 
     }
 
@@ -57,6 +58,6 @@ public class MyRectangle {
 
     // Format for print statement 
     public String toString() {
-        return ""
+        return "Top Left = " + topLeft + " Bottom Right = " + bottomRight + " Length = " + getLength() + " width = " + getWidth();
     }
 }
