@@ -7,7 +7,7 @@ public class MyLine {
 
     //constructor including givin coordinates
     public MyLine(int x1, int y1, int x2, int y2) {
-        this.begin = new MyPoint(x1, y2);
+        this.begin = new MyPoint(x1, y1);
         this.end = new MyPoint(x2, y2);
     }
 
