@@ -47,17 +47,18 @@ public class MyRectangle {
 
     // Calculate the area of the rectangle (length x width)
     public float getArea() {
-        
+        return getLength() * getWidth();
 
     }
 
     // Calculate the perimeter of the rectangle (2x length + width)
     public double getPerimeter() {
+        return 2 * (getLength() + getWidth());
 
     }
 
     // Format for print statement 
     public String toString() {
-        return "Top Left = " + topLeft + " Bottom Right = " + bottomRight + " Length = " + getLength() + " width = " + getWidth();
+        return "Top Left = " + topLeft + " Bottom Right = " + bottomRight;
     }
 }
