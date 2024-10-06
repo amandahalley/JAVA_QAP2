@@ -99,6 +99,16 @@ public class MyLine {
     }
 
 
+    // Calculating gradient of line (slope)
+    public double getGradient() {
+        int xDiff = end.getX() - begin.getX();
+        int yDiff = end.getY() - begin.getY();
+        return Math.atan2(xDiff, yDiff);
+    }
 
+    // Print line in format given
+    public String toString() {
+        return "MyLine[begin = " + begin + ", end = " + end + "]";
+    }
     
 }
