@@ -13,7 +13,7 @@ public class Person {
     }
 
 
-    Public String toString() {
-        return "";
-    }
+    public String toString() {
+        return firstName + " " + lastName + ", " + home.toString();
+    };
 }
