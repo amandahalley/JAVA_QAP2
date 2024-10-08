@@ -13,7 +13,7 @@ public class CreditCardDemo {
             Person owner = new Person("Christie", "Diane", home);
     
             CreditCard visa = new CreditCard(owner, LIMIT);
-    
+            System.out.println("\n");
             System.out.println(visa.getPersonals());
             System.out.println("Balance: " + visa.getBalance());
             System.out.println("Credit Limit: " + visa.getCreditLimit());
