@@ -25,11 +25,19 @@ public class CreditCard {
     }
 
     public void charge(Money amount) {
-
+        //Adds amount charged to the balance, if amount charged exceeds the credit limit, print error and no change is made to the balance.
+        if (balance.add(amount).compareTo(creditLimit) <= 0 ) {
+            balance = balance.add(amount); 
+            System.out.println("Charge: " + amount);
+        } else {
+            System.out.println("Exceeds credit limit");
+        }
     }
 
+    //Make payment onto card, subtracts payment amount from balance, print new balance amount
     public void payment(Money amount) {
-        
+        balance = balance.subtract(amount);
+        System.out.println("Payment: " + amount);
     }
  
 }
